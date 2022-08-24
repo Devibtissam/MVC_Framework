@@ -2,21 +2,15 @@
 namespace MVC\controllers;
 
 use MVC\core\controller;
-
+use MVC\models\dataProvider;
 class homecontroller extends controller{
 
     public function index(){
-        $db = $this->db();
-        $data = $db->run("select * FROM account")->fetchAll();
-        print_r($data);
-        echo '<pre>';
+        $data = new dataProvider();
+        $data = $data->getAllUser();
         $title = 'home index';
-        $this->view('home/index', ['title' => $title]);
-        
+        $this->view('home/index', ['title' => $title, 'data'=>$data]); 
     }
-
-   
-
 
 }
 

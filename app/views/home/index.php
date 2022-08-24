@@ -8,5 +8,8 @@
 </head>
 <body>
     <h1>Hello</h1>
+    <?php foreach($data as $d):?>
+        <li><?= $d['email']; ?></li>
+    <?php endforeach; ?>
 </body>
 </html>
