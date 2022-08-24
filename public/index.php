@@ -9,7 +9,13 @@ define('MODELS', APP . DS . 'models' . DS);
 define('VIEWS', APP . DS . 'views' . DS);
 
 
-// require_once(CORE. 'app.php');
+// config 
+define("SERVER","localhost");
+define("USERNAME","root");
+define("PASSWORD","");
+define("DATABASE","fs8_proone");
+define("DATABASE_TYPE","mysql");
+define("DOMAIN_NAME","http://mvc.test/");
 
 require_once('../vendor/autoload.php');
 
