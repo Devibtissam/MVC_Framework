@@ -6,10 +6,18 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit72b424f9e5051b0eb3b18f065d1755b9
 {
+    public static $files = array (
+        'da253f61703e9c22a5a34f228526f05a' => __DIR__ . '/..' . '/wixel/gump/gump.class.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'M' => 
         array (
             'MVC\\' => 4,
+        ),
+        'G' => 
+        array (
+            'GUMP\\' => 5,
         ),
         'D' => 
         array (
@@ -21,6 +29,10 @@ class ComposerStaticInit72b424f9e5051b0eb3b18f065d1755b9
         'MVC\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
+        ),
+        'GUMP\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wixel/gump/src',
         ),
         'Dcblogdev\\PdoWrapper\\' => 
         array (
